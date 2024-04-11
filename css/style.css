@@ -16,7 +16,7 @@ body{
     height: 90%;
     width: 85%;
     margin: auto;
-    background-color: blue;
+    display: flex;
 }
 /* fine container */
 
@@ -24,7 +24,13 @@ body{
 .row-left{
     height: 100%;
     width: 30%;
+    overflow-y: scroll;
+}
+.row-right{
+    height: 100%;
+    width: 70%;
     background-color: gray;
+    border-left: 1px solid white;
 }
 /* fine row */
 
@@ -55,6 +61,15 @@ body{
     height: 35px;
     background-color: #FAFAFA;
 }
+.col-70-1{
+    height: 80%;
+    width: 98%;
+    background-image: url(../img/mine.jpg);
+}
+.col-70-2{
+    
+    background-color:#F3EEEBff;
+}
 /* fine col */
 
 /* content */
@@ -63,6 +78,16 @@ body{
 }
 .content-6{
     border: 1px solid black;
+}
+.content-7{
+    height: 50%;
+    width: 100px;
+    background-color: gold;
+}
+.content-8{
+    height: 50px;
+    width: 100px;
+    background-color: gold;
 }
 
 /* fine content */
