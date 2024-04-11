@@ -64,6 +64,8 @@ body{
 .col-70-1{
     height: 80%;
     width: 98%;
+    display: flex;
+    flex-wrap: wrap;
     background-image: url(../img/mine.jpg);
 }
 .col-70-2{
