@@ -3,10 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* display first */
+
 body{
     font-family: "Lato", sans-serif;
     height: 100vh;
-    background-color: pink;
+    background-color:  #DBDAD3ff;
     display: flex;
 
 }
@@ -38,20 +40,24 @@ body{
 .card-1{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .card-2{
     display: flex;
 }
+.card-3{
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .card-4{
-    height: 70px;
+    height: 15%;
     background-color: #FAFAFA;
 }
 .card-5{
     width: 100%; 
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
 }
 .card-right{
     width: 100%;
@@ -67,7 +73,7 @@ body{
     background-color: #EAEAEA;
 }
 .col-30-2{
-    height: 60px;
+    padding: 10px;
     background-color: #8FDAFCff;
 }
 .col-30-3{
@@ -76,7 +82,7 @@ body{
 }
 .col-30-4{
     height: calc(100% - 145px);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .col-70-1{
     height: 80%;
@@ -94,15 +100,64 @@ body{
 /* fine col */
 
 /* content */
+.content-1{
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+.content-1 img{
+   height: 90%;
+   margin: auto;
+   padding: 5px;
+   border-radius: 50%;
+    
+}
+.content-2{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+.content-2-right{
+    padding-right: 20px;
+    display: flex;
+    gap: 15px;
+}
 .content-3{
     padding-right: 20px;
+}
+.content-3 span{
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
 }
 .content-4{
     width: 100%;
 }
-.content-6{
-    border-top: 1px solid black;
+.content-5{
+    display: -webkit-box;
+    background-color: white;
 }
+.content-5 span{
+    display: flex;
+    -webkit-box-align: center;
+}
+.content-6{
+    border-top: 1px solid lightgray;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+.content-6 img{
+    height: 90%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 50%;
+ }
+
 .content-7{
     height: 30%;
     width: 60%;
@@ -114,11 +169,12 @@ body{
     background-color: gold;
 }
 .content-9{
-    height: calc(100% - 50px -80%);
+    height: calc(100% - 50px - 80%);
     width: 100%;
     display: flex;
     align-items: center;
     text-align: center;
+    margin: auto;
 }
 
 .content-4 a{
@@ -128,7 +184,7 @@ body{
    display: flex;
    width: 90%;
    margin: auto;
-   border: 1px solid lightgrey;
+   border: none;
 }
 .content-9 span{
    width: 10%;
@@ -136,7 +192,10 @@ body{
 .content-9 input{
    width: 100%;
    padding: 15px;
-   margin: auto;
+   height: 10px;
+}
+.user{
+    
 }
 
 /* fine content */
@@ -151,8 +210,8 @@ body{
     
     }
     .container{
-        margin: auto;
-        display: flex;
+        height: 100vh;
+        width: 100%;
     }
     .row-left{
         height: 100%;
@@ -174,22 +233,35 @@ body{
     .col-30-4{
         height: calc(100% - 50px);
     }
+    .content-1{
+        margin: auto;
+    }
     .content-2{
         display: none;
     }
+    .content-6 h4{
+        display: none;
+    }
+    .content-6 p{
+        display: none;
+    }
+    
     /* fine tablet */
 }
 
 /* inizio smartphone */
 @media screen and (max-width: 480px){
+    .body{
+        
+    }
     .container{
-        height: 90%;
-        width: 85%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
+        height: 100vh;
+        width: 100%;
     }
     .row-left{
+        display: none;
+    }
+    .content-2-right{
         display: none;
     }
 }
