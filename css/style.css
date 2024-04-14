@@ -59,10 +59,11 @@ body{
     display: flex;
 }
 .card-right{
-    width: 100%;
+    margin-top: 10px;
 }
 .card-left{
-    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 /* fine card */
 
@@ -87,7 +88,6 @@ body{
     height: 80%;
     width: 98%;
     display: flex;
-    justify-content: flex-end;
     background-image: url(../img/mine.jpg);
     overflow-y: scroll;
 }
@@ -160,12 +160,14 @@ body{
 .content-7{
     height: 30%;
     width: 60%;
-    background-color: gold;
+    background-color: #D4F9BBff;
+    border-radius: 20px;
 }
 .content-8{
     height: 30%;
     width: 60%;
-    background-color: gold;
+    background-color: #FFFFFFff;
+    border-radius: 20px;
 }
 .content-9{
     height: calc(100% - 50px - 80%);
@@ -185,6 +187,24 @@ body{
    margin: auto;
    border: none;
 }
+.content-7 p{
+    padding: 20px;
+}
+.content-8 p{
+    padding: 20px;
+}
+.content-7 span{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    padding-right: 10px;
+}
+.content-8 span{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    padding-right: 10px;
+}
 .content-9 span{
    width: 10%;
 }
@@ -193,9 +213,10 @@ body{
    padding: 15px;
    height: 10px;
 }
-.user{
-    
-    
+.message{
+   margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* fine content */
