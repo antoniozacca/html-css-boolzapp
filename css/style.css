@@ -218,7 +218,9 @@ body{
     margin-left: 10px;
     margin-right: 10px;
 }
-
+.message span{
+    color: #C6DDBBff;;
+}
 /* fine content */
 
 /* inizio responsive */
